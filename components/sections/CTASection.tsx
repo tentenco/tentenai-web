@@ -1,7 +1,7 @@
 'use client'
 
 import { Section } from '@/components/ui/Section'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { useTranslation } from '@/components/providers/TranslationProvider'
 import { Calendar, Download } from 'lucide-react'
 import { cn } from '@/lib/utils'

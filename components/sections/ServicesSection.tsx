@@ -1,6 +1,6 @@
 'use client'
 
-import { Section, SectionHeader } from '@/components/ui/Section'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { useTranslation } from '@/components/providers/TranslationProvider'
 import { 
   Sparkles, 
@@ -8,7 +8,8 @@ import {
   Eye, 
   MessageSquare, 
   Database, 
-  Lightbulb 
+  Lightbulb,
+  ArrowRight 
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -26,47 +27,52 @@ export function ServicesSection() {
   const services = t('services.items') as any as Record<string, { title: string; description: string }>
 
   return (
-    <Section id="services" className="bg-gray-50">
-      <SectionHeader
-        title={t('services.title')}
-        subtitle={t('services.subtitle')}
-      />
+    <section id="services" className="py-20 lg:py-32">
+      <div className="container">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            {t('services.title')}
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            {t('services.subtitle')}
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {Object.entries(services).map(([key, service], index) => {
-          const Icon = serviceIcons[key as keyof typeof serviceIcons]
-          
-          return (
-            <div
-              key={key}
-              className={cn(
-                "group bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300",
-                "border border-gray-100 hover:border-gray-200",
-                "animate-fade-up"
-              )}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {/* Icon */}
-              <div className="w-14 h-14 bg-accent-light rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Icon className="w-7 h-7 text-accent" />
-              </div>
-
-              {/* Content */}
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {service.description}
-              </p>
-
-              {/* Hover Effect Line */}
-              <div className="mt-6 h-1 bg-gray-100 rounded-full overflow-hidden">
-                <div className="h-full bg-accent w-0 group-hover:w-full transition-all duration-500" />
-              </div>
-            </div>
-          )
-        })}
+        <div className="mx-auto mt-16 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {Object.entries(services).map(([key, service], index) => {
+            const Icon = serviceIcons[key as keyof typeof serviceIcons]
+            
+            return (
+              <Card 
+                key={key} 
+                className={cn(
+                  "group relative overflow-hidden border-muted hover:border-foreground/20 transition-all duration-300",
+                  "hover:shadow-lg"
+                )}
+              >
+                <CardHeader>
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    {service.description}
+                  </CardDescription>
+                  <div className="mt-4 flex items-center text-sm font-medium text-primary">
+                    Learn more
+                    <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </CardContent>
+                
+                {/* Hover gradient effect */}
+                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-primary/0 to-primary/5 opacity-0 transition-opacity group-hover:opacity-100" />
+              </Card>
+            )
+          })}
+        </div>
       </div>
-    </Section>
+    </section>
   )
 }
