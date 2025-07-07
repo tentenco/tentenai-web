@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { useTranslation } from '@/components/providers/TranslationProvider'
 import { cn } from '@/lib/utils'
 import { Menu, X, Globe } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,6 +21,15 @@ export function Navigation() {
   const pathname = usePathname()
   const router = useRouter()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const navItems = [
     { href: `/${locale}#services`, label: t('nav.services') },
@@ -39,14 +48,28 @@ export function Navigation() {
   }
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className={cn(
+      "fixed top-0 z-50 w-full transition-all duration-300",
+      isScrolled 
+        ? "bg-background/95 backdrop-blur-md border-b" 
+        : "bg-transparent"
+    )}>
       <div className="container flex h-16 items-center">
         {/* Logo */}
         <Link href={`/${locale}`} className="mr-6 flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">T</span>
+          <div className={cn(
+            "h-8 w-8 rounded-lg flex items-center justify-center transition-colors",
+            isScrolled ? "bg-primary" : "bg-white/20 backdrop-blur-sm"
+          )}>
+            <span className={cn(
+              "font-bold text-lg",
+              isScrolled ? "text-primary-foreground" : "text-white"
+            )}>T</span>
           </div>
-          <span className="hidden font-bold text-xl sm:inline-block">
+          <span className={cn(
+            "hidden font-bold text-xl sm:inline-block transition-colors",
+            isScrolled ? "text-foreground" : "text-white"
+          )}>
             TentenAI
           </span>
         </Link>
@@ -59,8 +82,14 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "transition-colors hover:text-foreground/80",
-                  pathname === item.href ? "text-foreground" : "text-foreground/60"
+                  "transition-colors",
+                  isScrolled 
+                    ? pathname === item.href 
+                      ? "text-foreground" 
+                      : "text-foreground/60 hover:text-foreground/80"
+                    : pathname === item.href
+                      ? "text-white"
+                      : "text-white/80 hover:text-white"
                 )}
               >
                 {item.label}
