@@ -24,14 +24,15 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const translations = await getTranslations(params.locale)
+  const { locale } = await params
+  const translations = await getTranslations(locale)
 
   return (
-    <html lang={params.locale} dir={params.locale === 'ar' ? 'rtl' : 'ltr'}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className={inter.className}>
-        <TranslationProvider locale={params.locale} translations={translations}>
+        <TranslationProvider locale={locale} translations={translations}>
           {children}
         </TranslationProvider>
       </body>

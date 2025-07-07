@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   keywords: 'AI development, machine learning, generative AI, computer vision, NLP, data engineering, AI consulting',
 }
 
-export default function HomePage() {
+export default function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
   return <PageContent />
 }
