@@ -1,25 +1,12 @@
-'use client'
+import { PageContent } from '@/components/PageContent'
+import { Metadata } from 'next'
 
-import { Navigation } from '@/components/layout/Navigation'
-import { Footer } from '@/components/layout/Footer'
-import { HeroSection } from '@/components/sections/HeroSection'
-import { ServicesSection } from '@/components/sections/ServicesSection'
-import { IndustriesSection } from '@/components/sections/IndustriesSection'
-import { ProcessSection } from '@/components/sections/ProcessSection'
-import { CTASection } from '@/components/sections/CTASection'
+export const metadata: Metadata = {
+  title: 'TentenAI - AI Solutions That Transform Your Business',
+  description: 'Partner with TentenAI to unlock the power of artificial intelligence and drive innovation across your organization. Offering Generative AI, Machine Learning, Computer Vision, and more.',
+  keywords: 'AI development, machine learning, generative AI, computer vision, NLP, data engineering, AI consulting',
+}
 
 export default function HomePage() {
-  return (
-    <>
-      <Navigation />
-      <main>
-        <HeroSection />
-        <ServicesSection />
-        <IndustriesSection />
-        <ProcessSection />
-        <CTASection />
-      </main>
-      <Footer />
-    </>
-  )
+  return <PageContent />
 }
