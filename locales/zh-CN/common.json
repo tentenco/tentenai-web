@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "services": "服务",
+    "industries": "行业",
+    "caseStudies": "案例研究",
+    "about": "关于我们",
+    "contact": "联系",
+    "getStarted": "开始使用"
+  },
+  "hero": {
+    "headline": "改变您业务的AI解决方案",
+    "subheadline": "与TentenAI合作，释放人工智能的力量，推动整个组织的创新",
+    "cta": "开始您的AI之旅",
+    "secondaryCta": "探索我们的解决方案"
+  },
+  "attention": {
+    "title": "为什么领先企业选择TentenAI",
+    "stats": {
+      "projects": {
+        "number": "200+",
+        "label": "成功项目"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "label": "客户满意度"
+      },
+      "experts": {
+        "number": "50+",
+        "label": "AI专家"
+      },
+      "roi": {
+        "number": "3.5x",
+        "label": "平均投资回报率"
+      }
+    }
+  },
+  "services": {
+    "title": "我们的AI服务",
+    "subtitle": "量身定制的端到端AI解决方案",
+    "items": {
+      "genai": {
+        "title": "生成式AI解决方案",
+        "description": "利用尖端的LLM、ChatGPT和DALL-E创建能够理解和生成类人内容的智能应用程序"
+      },
+      "ml": {
+        "title": "机器学习开发",
+        "description": "设计用于解决复杂业务问题的自定义ML模型，从预测分析到推荐系统"
+      },
+      "cv": {
+        "title": "计算机视觉",
+        "description": "先进的图像和视频分析解决方案，用于质量控制、安全、医学成像等"
+      },
+      "nlp": {
+        "title": "自然语言处理",
+        "description": "从文本中提取见解，实现多语言支持，并建立理解上下文的智能聊天机器人"
+      },
+      "data": {
+        "title": "数据工程与分析",
+        "description": "建立强大的数据管道和分析平台，将您的数据转化为可操作的见解"
+      },
+      "consulting": {
+        "title": "AI策略咨询",
+        "description": "通过技术选择、实施规划和ROI优化的专家指导，定义您的AI路线图"
+      }
+    }
+  },
+  "industries": {
+    "title": "我们服务的行业",
+    "subtitle": "跨多元行业的实证专业知识",
+    "items": {
+      "healthcare": "医疗保健与医疗科技",
+      "finance": "金融服务",
+      "retail": "电子商务与零售",
+      "manufacturing": "制造业",
+      "technology": "科技与SaaS",
+      "education": "教育",
+      "realestate": "房地产",
+      "logistics": "物流与运输"
+    }
+  },
+  "process": {
+    "title": "我们经过验证的流程",
+    "subtitle": "从概念到部署，我们在每一步都为您提供指导",
+    "steps": {
+      "discovery": {
+        "title": "发现与分析",
+        "description": "我们深入了解您的业务挑战并识别AI机会"
+      },
+      "strategy": {
+        "title": "策略与规划",
+        "description": "定义明确的目标、成功指标和实施路线图"
+      },
+      "development": {
+        "title": "开发与测试",
+        "description": "使用敏捷方法构建和验证AI解决方案"
+      },
+      "deployment": {
+        "title": "部署与扩展",
+        "description": "自信地启动您的AI解决方案并为增长扩展"
+      }
+    }
+  },
+  "cta": {
+    "title": "准备好用AI改变您的业务了吗？",
+    "subtitle": "让我们讨论TentenAI如何帮助您实现目标",
+    "button": "预约咨询",
+    "or": "或",
+    "secondary": "下载我们的AI指南"
+  },
+  "footer": {
+    "company": "公司",
+    "about": "关于我们",
+    "careers": "职业",
+    "partners": "合作伙伴",
+    "press": "媒体",
+    "services": "服务",
+    "aiDevelopment": "AI开发",
+    "consulting": "咨询",
+    "dataEngineering": "数据工程",
+    "support": "支持",
+    "resources": "资源",
+    "blog": "博客",
+    "caseStudies": "案例研究",
+    "documentation": "文档",
+    "contact": "联系",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "copyright": "© 2024 TentenAI. 保留所有权利。"
+  }
+}

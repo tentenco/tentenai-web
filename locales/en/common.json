@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "caseStudies": "Case Studies",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "headline": "AI Solutions That Transform Your Business",
+    "subheadline": "Partner with TentenAI to unlock the power of artificial intelligence and drive innovation across your organization",
+    "cta": "Start Your AI Journey",
+    "secondaryCta": "Explore Our Solutions"
+  },
+  "attention": {
+    "title": "Why Leading Companies Choose TentenAI",
+    "stats": {
+      "projects": {
+        "number": "200+",
+        "label": "Successful Projects"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "label": "Client Satisfaction"
+      },
+      "experts": {
+        "number": "50+",
+        "label": "AI Experts"
+      },
+      "roi": {
+        "number": "3.5x",
+        "label": "Average ROI"
+      }
+    }
+  },
+  "services": {
+    "title": "Our AI Services",
+    "subtitle": "End-to-end AI solutions tailored to your business needs",
+    "items": {
+      "genai": {
+        "title": "Generative AI Solutions",
+        "description": "Leverage cutting-edge LLMs, ChatGPT, and DALL-E to create intelligent applications that understand and generate human-like content"
+      },
+      "ml": {
+        "title": "Machine Learning Development",
+        "description": "Custom ML models designed to solve complex business problems, from predictive analytics to recommendation systems"
+      },
+      "cv": {
+        "title": "Computer Vision",
+        "description": "Advanced image and video analysis solutions for quality control, security, medical imaging, and more"
+      },
+      "nlp": {
+        "title": "Natural Language Processing",
+        "description": "Extract insights from text, enable multilingual support, and build intelligent chatbots that understand context"
+      },
+      "data": {
+        "title": "Data Engineering & Analytics",
+        "description": "Build robust data pipelines and analytics platforms that turn your data into actionable insights"
+      },
+      "consulting": {
+        "title": "AI Strategy Consulting",
+        "description": "Define your AI roadmap with expert guidance on technology selection, implementation planning, and ROI optimization"
+      }
+    }
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": "Proven expertise across diverse sectors",
+    "items": {
+      "healthcare": "Healthcare & MedTech",
+      "finance": "Financial Services",
+      "retail": "E-commerce & Retail",
+      "manufacturing": "Manufacturing",
+      "technology": "Technology & SaaS",
+      "education": "Education",
+      "realestate": "Real Estate",
+      "logistics": "Logistics & Transportation"
+    }
+  },
+  "process": {
+    "title": "Our Proven Process",
+    "subtitle": "From concept to deployment, we guide you every step of the way",
+    "steps": {
+      "discovery": {
+        "title": "Discovery & Analysis",
+        "description": "We dive deep into your business challenges and identify AI opportunities"
+      },
+      "strategy": {
+        "title": "Strategy & Planning",
+        "description": "Define clear objectives, success metrics, and implementation roadmap"
+      },
+      "development": {
+        "title": "Development & Testing",
+        "description": "Build and validate AI solutions using agile methodologies"
+      },
+      "deployment": {
+        "title": "Deployment & Scaling",
+        "description": "Launch your AI solution with confidence and scale for growth"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business with AI?",
+    "subtitle": "Let's discuss how TentenAI can help you achieve your goals",
+    "button": "Schedule a Consultation",
+    "or": "or",
+    "secondary": "Download Our AI Guide"
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "partners": "Partners",
+    "press": "Press",
+    "services": "Services",
+    "aiDevelopment": "AI Development",
+    "consulting": "Consulting",
+    "dataEngineering": "Data Engineering",
+    "support": "Support",
+    "resources": "Resources",
+    "blog": "Blog",
+    "caseStudies": "Case Studies",
+    "documentation": "Documentation",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2024 TentenAI. All rights reserved."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "services": "서비스",
+    "industries": "산업",
+    "caseStudies": "사례 연구",
+    "about": "회사 소개",
+    "contact": "문의",
+    "getStarted": "시작하기"
+  },
+  "hero": {
+    "headline": "비즈니스를 변화시키는 AI 솔루션",
+    "subheadline": "TentenAI와 파트너십을 맺고 인공지능의 힘을 활용하여 조직 전체의 혁신을 주도하세요",
+    "cta": "AI 여정 시작하기",
+    "secondaryCta": "솔루션 살펴보기"
+  },
+  "attention": {
+    "title": "선도 기업들이 TentenAI를 선택하는 이유",
+    "stats": {
+      "projects": {
+        "number": "200+",
+        "label": "성공 프로젝트"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "label": "고객 만족도"
+      },
+      "experts": {
+        "number": "50+",
+        "label": "AI 전문가"
+      },
+      "roi": {
+        "number": "3.5배",
+        "label": "평균 ROI"
+      }
+    }
+  },
+  "services": {
+    "title": "AI 서비스",
+    "subtitle": "비즈니스 요구에 맞춘 엔드투엔드 AI 솔루션",
+    "items": {
+      "genai": {
+        "title": "생성형 AI 솔루션",
+        "description": "최첨단 LLM, ChatGPT, DALL-E를 활용하여 인간과 같은 콘텐츠를 이해하고 생성하는 지능형 애플리케이션 개발"
+      },
+      "ml": {
+        "title": "머신러닝 개발",
+        "description": "예측 분석부터 추천 시스템까지 복잡한 비즈니스 문제를 해결하는 맞춤형 ML 모델"
+      },
+      "cv": {
+        "title": "컴퓨터 비전",
+        "description": "품질 관리, 보안, 의료 영상 등을 위한 고급 이미지 및 비디오 분석 솔루션"
+      },
+      "nlp": {
+        "title": "자연어 처리",
+        "description": "텍스트에서 인사이트를 추출하고, 다국어 지원을 가능하게 하며, 문맥을 이해하는 지능형 챗봇 구축"
+      },
+      "data": {
+        "title": "데이터 엔지니어링 및 분석",
+        "description": "데이터를 실행 가능한 인사이트로 전환하는 강력한 데이터 파이프라인 및 분석 플랫폼 구축"
+      },
+      "consulting": {
+        "title": "AI 전략 컨설팅",
+        "description": "기술 선택, 구현 계획 및 ROI 최적화에 대한 전문가 안내로 AI 로드맵 정의"
+      }
+    }
+  },
+  "industries": {
+    "title": "서비스 산업",
+    "subtitle": "다양한 부문에 걸친 입증된 전문성",
+    "items": {
+      "healthcare": "헬스케어 및 메드테크",
+      "finance": "금융 서비스",
+      "retail": "이커머스 및 리테일",
+      "manufacturing": "제조업",
+      "technology": "기술 및 SaaS",
+      "education": "교육",
+      "realestate": "부동산",
+      "logistics": "물류 및 운송"
+    }
+  },
+  "process": {
+    "title": "검증된 프로세스",
+    "subtitle": "컨셉부터 배포까지 모든 단계를 안내합니다",
+    "steps": {
+      "discovery": {
+        "title": "발견 및 분석",
+        "description": "비즈니스 과제를 심층적으로 파악하고 AI 기회 식별"
+      },
+      "strategy": {
+        "title": "전략 및 계획",
+        "description": "명확한 목표, 성공 지표 및 구현 로드맵 정의"
+      },
+      "development": {
+        "title": "개발 및 테스트",
+        "description": "애자일 방법론을 사용하여 AI 솔루션 구축 및 검증"
+      },
+      "deployment": {
+        "title": "배포 및 확장",
+        "description": "자신있게 AI 솔루션을 출시하고 성장에 맞춰 확장"
+      }
+    }
+  },
+  "cta": {
+    "title": "AI로 비즈니스를 변화시킬 준비가 되셨나요?",
+    "subtitle": "TentenAI가 어떻게 목표 달성을 도울 수 있는지 논의해 봅시다",
+    "button": "상담 예약",
+    "or": "또는",
+    "secondary": "AI 가이드 다운로드"
+  },
+  "footer": {
+    "company": "회사",
+    "about": "회사 소개",
+    "careers": "채용",
+    "partners": "파트너",
+    "press": "언론",
+    "services": "서비스",
+    "aiDevelopment": "AI 개발",
+    "consulting": "컨설팅",
+    "dataEngineering": "데이터 엔지니어링",
+    "support": "지원",
+    "resources": "리소스",
+    "blog": "블로그",
+    "caseStudies": "사례 연구",
+    "documentation": "문서",
+    "contact": "문의",
+    "legal": "법적 고지",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용 약관",
+    "copyright": "© 2024 TentenAI. All rights reserved."
+  }
+}
